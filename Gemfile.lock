@@ -264,7 +264,6 @@ DEPENDENCIES
   eip_validator (>= 0.8.2)
   github-pages (= 206)
   html-proofer (>= 3.3.1)
-  jekyll-feed (~> 0.11)
   minima (~> 2.0)
   tzinfo-data
 
