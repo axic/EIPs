@@ -20,9 +20,9 @@ permalink: /last-call.xml
         <title>EIP-{{ eip.eip }}: {{ eip.title | xml_escape }} (Last Call)</title>
         <description>{{ description | xml_escape }}</description>
         <pubDate>{{ eip.created | date_to_rfc822 }}</pubDate>
-        <category>{{ eip.category }}</category>
-        <link>{{ site.url }}/{{ eip.url }}</link>
-        <guid isPermaLink="true">{{ site.url }}/{{ eip.url }}</guid>
+        {% if eip.category %}<category>{{ eip.category }}</category>{% endif %}
+        <link>{{ site.url }}{{ eip.url }}</link>
+        <guid isPermaLink="true">{{ site.url }}{{ eip.url }}</guid>
       </item>
       {% endif %}
     {% endfor %}
