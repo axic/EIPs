@@ -3,7 +3,7 @@
 {% if eip.discussions-to %}
   <p>The author has requested that discussions happen at the following URL: <a target="_blank" href="{{ eip.discussions-to }}">{{ eip.discussions-to }}</a>{{ eip.discussions-to }}</p>
 {% else %}
-  <p>Please visit the <a target="_blank" href="https://github.com/ethereum/EIPs/issues/">issue page</a> to comment.</p>
+  <p>Please visit the <a target="_blank" href="{{ site.url }}/EIPs/issues/">issue page</a> to comment.</p>
 {% endif %}
         
 {% if eip.requires[0] %}
